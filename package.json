@@ -1,0 +1,12 @@
+{
+  "name": "sunrise-ramp-calculator",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node rampCalculator.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.1"
+  }
+}
