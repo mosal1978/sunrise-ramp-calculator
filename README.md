@@ -14,4 +14,7 @@ Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, 
 
 ```bash
 npm install
-npm run dev
+npm start -- 2 0.1 --recommend
+```
+
+Das Beispiel oben berechnet eine Rampe mit 2 m Länge und 0,1 m Höhenunterschied und zeigt zusätzlich die empfohlenen Rampenlängen bei 6 % bzw. 10 % Steigung an.
