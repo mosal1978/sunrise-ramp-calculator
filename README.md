@@ -15,3 +15,14 @@ Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, 
 ```bash
 npm install
 npm run dev
+```
+
+## PC-Server
+
+Der Python-Server im Ordner `pc-server` wird wie folgt vorbereitet und gestartet:
+
+```bash
+cd pc-server
+pip install -r requirements.txt
+python server.py
+```
