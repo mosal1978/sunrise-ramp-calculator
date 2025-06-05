@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise Medical Empulse R20 - Fehlerbehebungshandbuch</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sunrise Medical Empulse R20 - Fehlerbehebungshandbuch</h1>
+    <select id="language-selector" class="form-select mb-3" onchange="changeLanguage()">
+      <option value="de" selected>Deutsch</option>
+      <option value="en">English</option>
+    </select>
+    <div class="progress mb-3">
+      <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="steps">
+      <div class="step active" id="step1" aria-labelledby="step1-title">
+        <h2 id="step1-title">Fehlerbeschreibung: R20 lässt sich nicht einschalten</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1-1" aria-label="Batterie korrekt angeschlossen?" aria-describedby="check1-1-label">
+          <label for="check1-1" class="form-check-label" id="check1-1-label">Batterie korrekt angeschlossen?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1-2" aria-label="Batterie eingeschaltet?" aria-describedby="check1-2-label">
+          <label for="check1-2" class="form-check-label" id="check1-2-label">Batterie eingeschaltet?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1-3" aria-label="Batterie geladen?" aria-describedby="check1-3-label">
+          <label for="check1-3" class="form-check-label" id="check1-3-label">Batterie geladen?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1-4" aria-label="Sicherungen in der Batterie defekt?" aria-describedby="check1-4-label">
+          <label for="check1-4" class="form-check-label" id="check1-4-label">Sicherungen in der Batterie defekt?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step2">
+        <h2 id="solution1-title">Lösung: R20 lässt sich nicht einschalten</h2>
+        <ul>
+          <li id="solution1-1">Stecken Sie das Gerät richtig ein</li>
+          <li id="solution1-2">Schalten Sie es ein</li>
+          <li id="solution1-3">Laden Sie die Batterie auf</li>
+          <li id="solution1-4">Kontaktieren Sie den Händler</li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step3">
+        <h2 id="step3-title">Fehlerbeschreibung: R20 bewegt sich nicht</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check3-1" aria-label="R20 eingeschaltet?" aria-describedby="check3-1-label">
+          <label for="check3-1" class="form-check-label" id="check3-1-label">R20 eingeschaltet?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check3-2" aria-label="Kabel richtig eingesteckt?" aria-describedby="check3-2-label">
+          <label for="check3-2" class="form-check-label" id="check3-2-label">Kabel richtig eingesteckt?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check3-3" aria-label="Batterie entladen?" aria-describedby="check3-3-label">
+          <label for="check3-3" class="form-check-label" id="check3-3-label">Batterie entladen?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check3-4" aria-label="Antriebsrad auf dem Boden?" aria-describedby="check3-4-label">
+          <label for="check3-4" class="form-check-label" id="check3-4-label">Antriebsrad auf dem Boden?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check3-5" aria-label="Antriebsrad hat Traktion?" aria-describedby="check3-5-label">
+          <label for="check3-5" class="form-check-label" id="check3-5-label">Antriebsrad hat Traktion?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step4">
+        <h2 id="solution2-title">Lösung: R20 bewegt sich nicht</h2>
+        <ul>
+          <li id="solution2-1">Schalten Sie das Gerät ein</li>
+          <li id="solution2-2">Stecken Sie das Kabel richtig ein</li>
+          <li id="solution2-3">Laden Sie die Batterie auf</li>
+          <li id="solution2-4">Haken Sie das Antriebsrad aus</li>
+          <li id="solution2-5">Kontaktieren Sie den Händler, wenn das Problem weiterhin besteht</li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step5">
+        <h2 id="step5-title">Fehlerbeschreibung: Batterie kann nicht geladen werden</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check5-1" aria-label="Ladegerät richtig eingesteckt?" aria-describedby="check5-1-label">
+          <label for="check5-1" class="form-check-label" id="check5-1-label">Ladegerät richtig eingesteckt?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check5-2" aria-label="Gerätestecker richtig eingesteckt?" aria-describedby="check5-2-label">
+          <label for="check5-2" class="form-check-label" id="check5-2-label">Gerätestecker richtig eingesteckt?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step6">
+        <h2 id="solution3-title">Lösung: Batterie kann nicht geladen werden</h2>
+        <ul>
+          <li id="solution3-1">Stecken Sie das Gerät richtig ein</li>
+          <li id="solution3-2">Kontaktieren Sie den Händler, wenn das Problem weiterhin besteht</li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step7">
+        <h2 id="step7-title">Fehlerbeschreibung: Batterie beschädigt</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check7-1" aria-label="Wird ein falsches Ladegerät verwendet?" aria-describedby="check7-1-label">
+          <label for="check7-1" class="form-check-label" id="check7-1-label">Wird ein falsches Ladegerät verwendet?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step8">
+        <h2 id="solution4-title">Lösung: Batterie beschädigt</h2>
+        <ul>
+          <li id="solution4-1">Verwenden Sie das Original-Ladegerät</li>
+          <li id="solution4-2">Benachrichtigen Sie den Händler, wenn die Batterie geöffnet wurde</li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step9">
+        <h2 id="step9-title">Fehlerbeschreibung: Motor funktioniert nicht und macht Geräusche</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check9-1" aria-label="Motorprüfung" aria-describedby="check9-1-label">
+          <label for="check9-1" class="form-check-label" id="check9-1-label">Motorprüfung</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check9-2" aria-label="Stecker vom Motor zum 9-poligen Motorkabel" aria-describedby="check9-2-label">
+          <label for="check9-2" class="form-check-label" id="check9-2-label">Stecker vom Motor zum 9-poligen Motorkabel</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step10">
+        <h2 id="solution5-title">Lösung: Motor funktioniert nicht und macht Geräusche</h2>
+        <ul>
+          <li id="solution5-1">Prüfen Sie den Motor und den Stecker</li>
+          <li id="solution5-2">Kontaktieren Sie den Händler, wenn das Problem weiterhin besteht</li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step11">
+        <h2 id="step11-title">Fehlerbeschreibung: Motor läuft nach dem Loslassen des Fahrtasters weiter</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check11-1" aria-label="Fahrtaster" aria-describedby="check11-1-label">
+          <label for="check11-1" class="form-check-label" id="check11-1-label">Fahrtaster</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step12">
+        <h2 id="solution6-title">Lösung: Motor läuft nach dem Loslassen des Fahrtasters weiter</h2>
+        <ul>
+          <li id="solution6-1">Erneuern Sie den Fahrtaster</li>
+          <li id="solution6-2">Kontaktieren Sie den Händler, wenn das Problem weiterhin besteht</li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step13">
+        <h2 id="step13-title">Fehlerbeschreibung: R20 schaltet sich nach 5 bis 10 Minuten einfach aus</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check13-1" aria-label="Test mit dem Service-Kit" aria-describedby="check13-1-label">
+          <label for="check13-1" class="form-check-label" id="check13-1-label">Test mit dem Service-Kit</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step14">
+        <h2 id="solution7-title">Lösung: R20 schaltet sich nach 5 bis 10 Minuten einfach aus</h2>
+        <ul>
+          <li id="solution7-1">Jeder, der ein Service-Kit erhält, kann eine Fehlersuche durch Kreuztausch durchführen</li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step15">
+        <h2 id="step15-title">Fehlerbeschreibung: Geräteüberprüfung</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check15-1" aria-label="Ist das Gerät eingeschaltet?" aria-describedby="check15-1-label">
+          <label for="check15-1" class="form-check-label" id="check15-1-label">Ist das Gerät eingeschaltet?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check15-2" aria-label="Gibt es Anzeichen für Beschädigungen an Gehäuse oder Kabel?" aria-describedby="check15-2-label">
+          <label for="check15-2" class="form-check-label" id="check15-2-label">Gibt es Anzeichen für Beschädigungen an Gehäuse oder Kabel?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check15-3" aria-label="Sind alle Anschlüsse und Kabel fest und sicher angeschlossen?" aria-describedby="check15-3-label">
+          <label for="check15-3" class="form-check-label" id="check15-3-label">Sind alle Anschlüsse und Kabel fest und sicher angeschlossen?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check15-4" aria-label="Funktioniert das Gerät, wenn es eingeschaltet wird?" aria-describedby="check15-4-label">
+          <label for="check15-4" class="form-check-label" id="check15-4-label">Funktioniert das Gerät, wenn es eingeschaltet wird?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step16">
+        <h2 id="step16-title">Fehleranalyse</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check16-1" aria-label="Gibt es Fehlermeldungen auf dem Bildschirm oder Alarmtöne?" aria-describedby="check16-1-label">
+          <label for="check16-1" class="form-check-label" id="check16-1-label">Gibt es Fehlermeldungen auf dem Bildschirm oder Alarmtöne?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check16-2" aria-label="Gibt es Anzeichen für Überhitzung oder Überlastung?" aria-describedby="check16-2-label">
+          <label for="check16-2" class="form-check-label" id="check16-2-label">Gibt es Anzeichen für Überhitzung oder Überlastung?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check16-3" aria-label="Funktionieren alle Sensoren korrekt?" aria-describedby="check16-3-label">
+          <label for="check16-3" class="form-check-label" id="check16-3-label">Funktionieren alle Sensoren korrekt?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step17">
+        <h2 id="step17-title">Reparatur</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check17-1" aria-label="Wurden alle notwendigen Tests durchgeführt, um die Reparatur zu bestätigen?" aria-describedby="check17-1-label">
+          <label for="check17-1" class="form-check-label" id="check17-1-label">Wurden alle notwendigen Tests durchgeführt, um die Reparatur zu bestätigen?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step18">
+        <h2 id="step18-title">Wartung</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check18-1" aria-label="Wurde das Gerät gereinigt und desinfiziert?" aria-describedby="check18-1-label">
+          <label for="check18-1" class="form-check-label" id="check18-1-label">Wurde das Gerät gereinigt und desinfiziert?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check18-2" aria-label="Wurden alle Wartungsaufgaben gemäß dem Wartungsplan durchgeführt?" aria-describedby="check18-2-label">
+          <label for="check18-2" class="form-check-label" id="check18-2-label">Wurden alle Wartungsaufgaben gemäß dem Wartungsplan durchgeführt?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check18-3" aria-label="Sind alle Komponenten des Geräts auf dem neuesten Stand?" aria-describedby="check18-3-label">
+          <label for="check18-3" class="form-check-label" id="check18-3-label">Sind alle Komponenten des Geräts auf dem neuesten Stand?</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check18-4" aria-label="Wurden alle Wartungsprotokolle ausgefüllt?" aria-describedby="check18-4-label">
+          <label for="check18-4" class="form-check-label" id="check18-4-label">Wurden alle Wartungsprotokolle ausgefüllt?</label>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="nextStep()"><span class="next-label">Weiter</span></button>
+      </div>
+      <div class="step" id="step19">
+        <p id="final-check">Fehlerbehebung abgeschlossen. Bei weiterhin bestehenden Problemen Kundendienst kontaktieren.</p>
+        <button class="btn btn-primary" onclick="restart()"><span id="restart">Neu starten</span></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
