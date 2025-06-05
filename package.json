@@ -1,0 +1,16 @@
+{
+  "name": "sunrise-ramp-calculator",
+  "version": "1.0.0",
+  "description": "Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, automatische Empfehlungen, Visualisierung & PDF-Export.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vitest": "^3.2.2"
+  }
+}
