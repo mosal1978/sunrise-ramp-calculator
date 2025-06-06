@@ -1,0 +1,10 @@
+{
+  "name": "sunrise-ramp-calculator",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "vitest"
+  }
+}
