@@ -12,14 +12,8 @@ Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, 
 
 ## Starten
 
-```bash
-npm install
-npm run dev
-```
-
-## PC-Server
-
-Der Python-Server im Ordner `pc-server` wird wie folgt vorbereitet und gestartet:
+Derzeit enthält dieses Repository nur den Python-Server im Ordner
+`pc-server`. Diesen startest du wie folgt:
 
 ```bash
 cd pc-server
