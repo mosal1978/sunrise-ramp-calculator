@@ -12,6 +12,9 @@ Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, 
 
 ## Starten
 
+Installiere zuerst die Abhängigkeiten und starte dann den Entwicklerserver:
+
 ```bash
 npm install
 npm run dev
+```

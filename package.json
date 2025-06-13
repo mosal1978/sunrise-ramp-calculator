@@ -1,0 +1,11 @@
+{
+  "name": "sunrise-ramp-calculator",
+  "version": "1.0.0",
+  "description": "Simple ramp calculator",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
