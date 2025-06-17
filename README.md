@@ -15,3 +15,9 @@ Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, 
 ```bash
 npm install
 npm run dev
+
+```
+
+## Lizenz
+
+Dieses Projekt steht unter der MIT-Lizenz. Siehe [LICENSE](LICENSE) für Details.
