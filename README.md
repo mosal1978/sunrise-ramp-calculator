@@ -1,6 +1,7 @@
 # 🌄 Sunrise Ramp Calculator
 
-Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, automatische Empfehlungen, Visualisierung & PDF-Export.
+Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, automatische Empfehlungen, Visualisierung & PDF-Export. 
+Das Node-Skript bietet nun eine einfache Kommandozeilenoberfläche, über die Steigung und Normkonformität direkt berechnet werden können.
 
 ## Features
 - ✅ Steigungs- & Winkelberechnung
@@ -14,7 +15,13 @@ Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, 
 
 ```bash
 npm install
-npm run dev
+npm run dev # startet die interaktive CLI
+```
+
+Tests können mit folgendem Befehl ausgeführt werden:
+
+```bash
+npm test
 ```
 
 ## PC-Server
@@ -26,3 +33,5 @@ cd pc-server
 pip install -r requirements.txt
 python server.py
 ```
+Der Server lauscht über Bluetooth (RFCOMM) auf eingehende Verbindungen und beantwortet einfache
+Anfragen zur Rampenüberprüfung.
