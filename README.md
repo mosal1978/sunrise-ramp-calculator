@@ -12,11 +12,20 @@ Ein barrierefreier Rampenrechner mit Unterstützung für internationale Normen, 
 
 ## Starten
 
-Derzeit enthält dieses Repository nur den Python-Server im Ordner
-`pc-server`. Diesen startest du wie folgt:
+Neben dem Flask-Server gibt es im Ordner `backgammon` ein
+Konsolen-Backgammon-Spiel. Dieses erlaubt das vollständige
+Durchspielen einer Partie inklusive Schlagen, Bar und Auswürfeln.
 
+Den Server startest du so:
 ```bash
 cd pc-server
 pip install -r requirements.txt
 python server.py
+```
+
+Das Backgammon-Spiel startest du mit:
+
+```bash
+cd backgammon
+python game.py
 ```
